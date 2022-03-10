@@ -1,7 +1,7 @@
 
 @distance = 50
 @base_moon_distance = 10
-@jumps = 1
+@jumps = 3
 
 ### Deneb System
 deneb_system = {
@@ -159,13 +159,13 @@ deneb_system = {
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1"
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "neighbor_t1_first_colony"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1_first_colony"
+		initializer = "neighbor_t2_second_colony"
 	}
 }
 
@@ -438,13 +438,13 @@ une_deneb_system = {
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "deneb_neighbor_t1"
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "deneb_neighbor_t1_first_colony"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "deneb_neighbor_t1_first_colony"
+		initializer = "deneb_neighbor_t2_second_colony"
 	}
 }
 

@@ -1,6 +1,6 @@
 @distance = 50
 @base_moon_distance = 10
-@jumps = 1
+@jumps = 3
 
 
 ### Sol System
@@ -270,13 +270,13 @@ sol_system_initializer = {
 	}
 
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t1"
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "sol_neighbor_t1_first_colony"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t1_first_colony"
+		initializer = "sol_neighbor_t2_second_colony"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies = 0 }
@@ -319,17 +319,6 @@ sol_neighbor_t1 = {
 	planet = {
 		count = { min = 2 max = 5 }
 		orbit_distance = 20
-	}
-
-	neighbor_system = {
-		trigger = { num_guaranteed_colonies >= 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t2_second_colony"
-	}
-	neighbor_system = {
-		trigger = { num_guaranteed_colonies < 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t2_no_guaranteed_colony"
 	}
 }
 
@@ -416,11 +405,10 @@ sol_neighbor_t1_first_colony = {
 		orbit_distance = 30
 		class = ideal_design_class
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 10 max = 10 }
+		size = { min = 12 max = 18 }
 
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
-			prevent_anomaly = yes					# no anomaly on guaranteed
 		}
 	}
 
@@ -439,6 +427,10 @@ sol_neighbor_t1_first_colony = {
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "sol_neighbor_t2"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t1"
 	}
 }
 
@@ -540,7 +532,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t2"
+		initializer = "sol_neighbor_t2_second_colony"
 	}
 }
 
@@ -647,11 +639,10 @@ sol_neighbor_t2_second_colony = {
 		orbit_distance = 25
 		class = ideal_design_class
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 20 max = 20 }
+		size = { min = 14 max = 24 }
 
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
-			prevent_anomaly = yes					# no anomaly on guaranteed
 		}
 
 		change_orbit = @base_moon_distance

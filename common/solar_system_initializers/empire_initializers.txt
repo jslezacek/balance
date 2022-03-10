@@ -5,7 +5,7 @@
 #########################################
 
 @distance = 50
-@jumps = 1
+@jumps = 3
 @planet_min_size = 10
 @planet_max_size = 25
 @base_moon_distance = 10
@@ -132,13 +132,13 @@ random_empire_init_01 = {
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1"
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "neighbor_t1_first_colony"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1_first_colony"
+		initializer = "neighbor_t2_second_colony"
 	}
 }
 
@@ -266,13 +266,13 @@ random_empire_init_02 = {
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1"
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "neighbor_t1_first_colony"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1_first_colony"
+		initializer = "neighbor_t2_second_colony"
 	}
 }
 
@@ -414,13 +414,13 @@ random_empire_init_03 = {
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1"
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "neighbor_t1_first_colony"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1_first_colony"
+		initializer = "neighbor_t2_second_colony"
 	}
 }
 
@@ -518,13 +518,13 @@ random_empire_init_04 = {
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1"
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "neighbor_t1_first_colony"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1_first_colony"
+		initializer = "neighbor_t2_second_colony"
 	}
 }
 
@@ -659,13 +659,13 @@ random_empire_init_05 = {
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1"
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "neighbor_t1_first_colony"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1_first_colony"
+		initializer = "neighbor_t2_second_colony"
 	}
 }
 
@@ -772,12 +772,12 @@ random_empire_init_06 = {
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1"
+		initializer = "neighbor_t1_first_colony"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t1_first_colony"
+		initializer = "neighbor_t2_second_colony"
 	}
 }
 
@@ -817,11 +817,6 @@ neighbor_t1 = {
 	planet = {
 		count = { min = 2 max = 5 }
 		orbit_distance = 20
-	}
-
-	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "neighbor_t2_second_colony"
 	}
 }
 
@@ -864,11 +859,11 @@ neighbor_t1_first_colony = {
 		modifiers = none
 		anomaly = none
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 10 max = 10 }
+		size = { min = 12 max = 18 }
 
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
-			prevent_anomaly = yes 					# no anomaly on guaranteed
+			prevent_anomaly = yes
 		}
 	}
 
@@ -887,6 +882,10 @@ neighbor_t1_first_colony = {
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t2"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1"
 	}
 }
 
@@ -972,13 +971,13 @@ neighbor_t2_second_colony = {
 		modifiers = none
 		anomaly = none
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 20 max = 20 }
+		size = { min = 14 max = 24 }
 
 		change_orbit = @base_moon_distance
 
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
-			prevent_anomaly = yes					# no anomaly on guaranteed
+			prevent_anomaly = yes
 		}
 
 		moon = {
