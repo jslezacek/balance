@@ -1,0 +1,4 @@
+- Guaranteed habitable worlds spawn 1 jump from home system
+- Guaranteed habitable worlds don't spawn anomalies
+- New galaxy size 300 and 500 setting
+- Improved home system player distribution based on ISS mod
