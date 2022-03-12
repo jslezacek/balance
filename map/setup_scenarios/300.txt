@@ -1,5 +1,5 @@
 setup_scenario = {
-	name = "300"
+	name = "tiny+"
 	priority = 1					#priority decides in which order the scenarios are listed
 	default = yes
 	num_stars = 300

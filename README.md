@@ -3,6 +3,9 @@
 - Guaranteed habitable worlds don't spawn anomalies
 - New galaxy size 300 and 500 setting
 - Improved home system player distribution based on ISS mod
+- Guaranteed habitables will have always at least 3 mining districts
+- Guaranteed 1 will spawn a 6 mineral asteroid
+- Guaranteed 2 will spawn a 5 mineral asteroid
 
 ## WISHLIST ##
 1. Necrophage primitives both spawn with 8 populations
@@ -13,7 +16,7 @@
 
 4. <s>Make guaranteed habitable worlds spawn immediately next to your homeworld both of them.</s>
 
-5. And make them both have mineral deposits.
+5. <s>And make them both have mineral deposits.</s>
 
 6. Bio amenities:
 - All Bio leaders: +2 amenities
