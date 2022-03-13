@@ -877,7 +877,7 @@ neighbor_t1_first_colony = {
 
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
-			prevent_anomaly = yes
+			prevent_anomaly = yes					# don't spawn anomaly on guaranteed
 			add_deposit = d_rich_mountain			# add +3 mining districts
 		}
 	}
@@ -1005,7 +1005,7 @@ neighbor_t2_second_colony = {
 
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
-			prevent_anomaly = yes
+			prevent_anomaly = yes					# don't spawn anomaly on guaranteed
 			add_deposit = d_rich_mountain			# add +3 mining districts
 		}
 
