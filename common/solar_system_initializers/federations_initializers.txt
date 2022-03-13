@@ -690,32 +690,6 @@ void_dweller_system = {
 		}
 	}
 	
-	# add asteroid with 6 minerals to vd home system
-	planet = {
-		count = 1
-		class = pc_asteroid
-		orbit_distance = 19
-		name = j0Jo
-		orbit_angle = { min = 90 max = 270 }
-		init_effect = {
-			clear_deposits = yes
-			add_deposit = d_minerals_6
-		}
-	}
-	
-	# add asteroid with 5 minerals to vd home system
-	planet = {
-		count = 1
-		class = pc_asteroid
-		orbit_distance = 21
-		name = s1p3R
-		orbit_angle = { min = 90 max = 270 }
-		init_effect = {
-			clear_deposits = yes
-			add_deposit = d_minerals_5
-		}
-	}
-	
 	planet = {
 		count = 1
 		class = star
@@ -848,6 +822,34 @@ void_dweller_system = {
 			class = random_non_colonizable
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
+		}
+	}
+	
+	# add asteroid with 6 minerals to vd home system
+	planet = {
+		count = 1
+		class = pc_asteroid
+		orbit_distance = 19
+		name = j0Jo
+		orbit_angle = { min = 90 max = 270 }
+		flags = { ignore_startup_effect }
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_minerals_6
+		}
+	}
+	
+	# add asteroid with 5 minerals to vd home system
+	planet = {
+		count = 1
+		class = pc_asteroid
+		orbit_distance = 21
+		name = s1p3R
+		orbit_angle = { min = 90 max = 270 }
+		flags = { ignore_startup_effect }
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_minerals_5
 		}
 	}
 }
@@ -2566,19 +2568,6 @@ sol_system_void_dweller_system = {
 		generate_home_system_resources = yes
 	}
 	
-	# add asteroid with 5 minerals to vd home system
-	planet = {
-		count = 1
-		class = pc_asteroid
-		orbit_distance = 21
-		name = s1p3R
-		orbit_angle = { min = 90 max = 270 }
-		init_effect = {
-			clear_deposits = yes
-			add_deposit = d_minerals_5
-		}
-	}
-	
 	planet = {
 		name = "NAME_Sol"
 		class = "pc_g_star"
@@ -2878,6 +2867,34 @@ sol_system_void_dweller_system = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+	}
+	
+	# add asteroid with 6 minerals to vd home system
+	planet = {
+		count = 1
+		class = pc_asteroid
+		orbit_distance = 19
+		name = j0Jo
+		orbit_angle = { min = 90 max = 270 }
+		flags = { ignore_startup_effect }
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_minerals_6
+		}
+	}
+	
+	# add asteroid with 5 minerals to vd home system
+	planet = {
+		count = 1
+		class = pc_asteroid
+		orbit_distance = 21
+		name = s1p3R
+		orbit_angle = { min = 90 max = 270 }
+		flags = { ignore_startup_effect }
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_minerals_5
+		}
 	}
 
 	neighbor_system = {

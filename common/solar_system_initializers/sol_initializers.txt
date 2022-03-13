@@ -385,19 +385,6 @@ sol_neighbor_t1_first_colony = {
 			orbit_distance = 25
 		}
 	}
-	
-	# add asteroid with 6 minerals to vd home system
-	planet = {
-		count = 1
-		class = pc_asteroid
-		orbit_distance = 19
-		name = j0Jo
-		orbit_angle = { min = 90 max = 270 }
-		init_effect = {
-			clear_deposits = yes
-			add_deposit = d_minerals_6
-		}
-	}
 
 	change_orbit = -220
 
