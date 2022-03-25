@@ -2,7 +2,7 @@ version="1"
 tags={
 	"Balance"
 }
-name="balance"
+name="WSC Balance Mod"
 picture="thumbnail.png"
 supported_version="3.3.*"
-remote_file_id="2776682360"
+remote_file_id="2783646881"
