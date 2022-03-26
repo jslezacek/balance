@@ -484,15 +484,15 @@ colonial_remains = {
 }
 
 prosp_uni_mod = {
-	pop_happiness = 0.1					# Lowered happiness from 15% -> 10%
-	planet_amenities_mult = 0.1		# Lowered amenities production from 25% -> 10%
-	#planet_jobs_produces_mult = 0.1 	# Removed resource bonus 10%
+	#pop_happiness = 0.1					# Lowered happiness from 15% -> 0%
+	planet_amenities_mult = 0.15		# Lowered amenities production from 25% -> 15%
+	planet_jobs_produces_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
 }
 
 prosp_uni_mod_gestalt = {
-	planet_amenities_mult = 0.1			# Lowered amenities production from 25% -> 10%
-	#planet_jobs_produces_mult = 0.1	# Removed resource bonus 10%
+	planet_amenities_mult = 0.15		# Lowered amenities production from 25% -> 15%
+	planet_jobs_produces_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
 }
 

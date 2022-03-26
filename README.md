@@ -43,7 +43,7 @@
 
 21. Add +10% hab to hivemind trait to counter aquatic nerf
 
-22. Prosperous Unification is too powerful. Suggested change:  adjust modifier to 10% happiness and only 10% amenities boost, remove the pop output bonus
+22. Prosperous Unification is too powerful. Removed 10% happiness. Reduced amenities from 25% to 15%.
 
 23. Trade League/Consumer Benefits/ Marketplace of ideas
 - cg from .25 to .30
