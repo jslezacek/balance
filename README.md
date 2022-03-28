@@ -1,3 +1,65 @@
+#Buffs:
+
+- Generic:
+  - Size penalty cost of traditions matches the cost scaling of tech
+  - Guaranteed planets 
+    - 1st spawn next to your homeworld
+    - 2nd spawn max 2 jumps away
+    - don't spawn anomalies
+    - have always at least 3 mining districts
+    - +6, +5 mineral asteroid
+
+- Weapons
+    - Proton / Neutron Launchers damage and cooldown reduced to match with kinetic artilery
+
+- Ringworld:
+    - Scrap miner: +1 minerals, +0.5 alloys from the job role
+
+- Remnants:
+    - Add 2 burrows blockers for 2 pops
+
+- Megacorp:
+    - Reduce sprawl from 25% to 15%
+    - Trade League/Consumer Benefits/ Marketplace of ideas consumer goods up 0.25 -> 0.3, unity 0.125 -> 0.15
+
+- Void dwellers:
+  - home system spawns with 2 asteroids +6, +5 minerals
+
+- Gestalts
+  - unity output for synapse, coordinator increased from 4 to 5
+  - Add +10% hab to hivemind trait
+- Bio
+  - leaders: +2 amenities, entertainers -2 amenities
+
+
+#Nerfs:
+- Generic
+  - Aquatic Trait now costs 3 points
+
+- Prosperous Unification
+  - Removed 10% happiness, reduced amenities from 25% to 15%
+
+- Rogue servitor
+  - Complex drone output from Bio Trophy reduced to 0.66%
+
+- Clone Army
+  - Fire rate descended=10% (down from 15%)
+  - Fire rate normal=15%  (down from 25%)
+  - Fire rate ascended=20% (down from 35%)
+  - Alloys from Clone Fertility project completion: Now 1000 (down from 2000)
+  - Specialist output from ascendant event=10% (down from 25%)
+  - Leader pop output from ascendant event=10% (down from 40%)
+  - Army damage from ascendant=50% (down from 75%)
+
+- Bios
+  - Fleet focus rulers cost reduction lowered from 20% -> 10%
+  - Emergency re-election cost for oligarchy/corporate increased to 2500 unity (up from 250)
+  - Ruler Trait Military Pioneer ship build cost AND ship upgrade cost reduction from 10% to 5%
+  - Ruler Naval Agenda Fleet expansion ship cost reduction from 10% to 5%
+
+#Known issues:
+  - if a player spawns with only 1 hyperlane (outside galaxy), he won't get his second guaranteed
+
 1. Emergency re-election cost for oligarchy/corporate increased to 2500 unity (up from 250)
 2. Ship Focus ruler from -20% cost to -10% cost
 3. Retired Navy governor from -10% cost to -5% cost   (REVERTED)
@@ -39,17 +101,15 @@
 19. Ringworld
     - Scrap miner: +1 minerals, +0.5 alloys from the job role
 
-20. Ship focus rulers to be put back to 10%, Bio governors to be put back to 10%. The unity cost for re-election is enough and we felt like we nerfed the fleet power a tad too much.
+20. Add +10% hab to hivemind trait to counter aquatic nerf
 
-21. Add +10% hab to hivemind trait to counter aquatic nerf
+21. Prosperous Unification is too powerful. Removed 10% happiness, Reduced amenities from 25% to 15%.
 
-22. Prosperous Unification is too powerful. Removed 10% happiness. Reduced amenities from 25% to 15%.
+22. Trade League/Consumer Benefits/ Marketplace of ideas
+    - cg from .25 to .30
+      -unity from .125  to .15
 
-23. Trade League/Consumer Benefits/ Marketplace of ideas
-- cg from .25 to .30
-  -unity from .125  to .15
+23. Megacorp sprawl, change from 25% to 15%
 
-24. Megacorp sprawl, change from 25% to 15%
-
-25. Remnants blockers
-    Add 2 burrows blockers for 2 pops
+24. Remnants blockers
+    Add 2 burrows blockers for 2 pops 

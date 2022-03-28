@@ -5,7 +5,7 @@
 #########################################
 
 @distance = 50
-@jumps = 3				# default
+@jumps = 2				# default
 @guaranteed_jumps = 1	# force guaranteed habitables 1 jump from start system
 @planet_min_size = 10
 @planet_max_size = 25
@@ -138,7 +138,7 @@ random_empire_init_01 = {
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		hyperlane_jumps = { min = 1 max = @guaranteed_jumps }
+		hyperlane_jumps = { min = 1 max = @jumps}
 		initializer = "neighbor_t2_second_colony"
 	}
 }
@@ -272,7 +272,7 @@ random_empire_init_02 = {
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		hyperlane_jumps = { min = 1 max = @guaranteed_jumps }
+		hyperlane_jumps = { min = 1 max = @jumps}
 		initializer = "neighbor_t2_second_colony"
 	}
 }
@@ -420,7 +420,7 @@ random_empire_init_03 = {
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		hyperlane_jumps = { min = 1 max = @guaranteed_jumps }
+		hyperlane_jumps = { min = 1 max = @jumps}
 		initializer = "neighbor_t2_second_colony"
 	}
 }
@@ -524,7 +524,7 @@ random_empire_init_04 = {
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		hyperlane_jumps = { min = 1 max = @guaranteed_jumps }
+		hyperlane_jumps = { min = 1 max = @jumps}
 		initializer = "neighbor_t2_second_colony"
 	}
 }
@@ -665,7 +665,7 @@ random_empire_init_05 = {
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		hyperlane_jumps = { min = 1 max = @guaranteed_jumps }
+		hyperlane_jumps = { min = 1 max = @jumps}
 		initializer = "neighbor_t2_second_colony"
 	}
 }
@@ -772,7 +772,7 @@ random_empire_init_06 = {
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }
+		hyperlane_jumps = { min = 1 max = @guaranteed_jumps }
 		initializer = "neighbor_t1_first_colony"
 	}
 	neighbor_system = {

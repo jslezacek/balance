@@ -1,5 +1,5 @@
 
-@jumps = 3
+@jumps = 2
 @guaranteed_jumps = 1	# force guaranteed habitables 1 jump from start system
 @asteroid_min_size = 2
 @asteroid_max_size = 4
@@ -89,7 +89,7 @@ ocean_paradise_start = {
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		hyperlane_jumps = { min = 1 max = @guaranteed_jumps }
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t2_second_colony"
 	}
 }
