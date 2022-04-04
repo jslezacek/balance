@@ -351,6 +351,20 @@ sol_neighbor_t1_first_colony = {
 		size = 27
 		has_ring = no
 	}
+	
+	# add asteroid with 6 minerals to guaranteed colony
+	planet = {
+		count = 1
+		class = pc_asteroid
+		orbit_distance = 21
+		name = j0Jo
+		orbit_angle = { min = 90 max = 270 }
+		init_effect = {
+			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
+			clear_deposits = yes
+			add_deposit = d_minerals_6
+		}
+	}
 
 	planet = {
 		name = "NAME_Proxima_Centauri"
@@ -636,6 +650,7 @@ sol_neighbor_t2_second_colony = {
 		name = s1p3R
 		orbit_angle = { min = 90 max = 270 }
 		init_effect = {
+			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
 			clear_deposits = yes
 			add_deposit = d_minerals_5
 		}

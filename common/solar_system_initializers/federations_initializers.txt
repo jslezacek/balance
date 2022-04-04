@@ -833,6 +833,7 @@ void_dweller_system = {
 		orbit_angle = { min = 90 max = 270 }
 		flags = { ignore_startup_effect }
 		init_effect = {
+			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
 			clear_deposits = yes
 			add_deposit = d_minerals_6
 		}
@@ -847,6 +848,7 @@ void_dweller_system = {
 		orbit_angle = { min = 90 max = 270 }
 		flags = { ignore_startup_effect }
 		init_effect = {
+			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
 			clear_deposits = yes
 			add_deposit = d_minerals_5
 		}
@@ -1920,6 +1922,19 @@ shattered_ring_start = {
 		orbit_angle = 30
 		orbit_distance = 5
 	}
+	
+	# add asteroid with 5 minerals to guaranteed colony
+	planet = {
+		count = 1
+		class = pc_asteroid
+		orbit_distance = 28
+		name = s1p3R
+		orbit_angle = { min = 90 max = 270 }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
+			add_deposit = d_minerals_5
+		}
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
@@ -2877,6 +2892,7 @@ sol_system_void_dweller_system = {
 		orbit_angle = { min = 90 max = 270 }
 		flags = { ignore_startup_effect }
 		init_effect = {
+			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
 			clear_deposits = yes
 			add_deposit = d_minerals_6
 		}
@@ -2891,6 +2907,7 @@ sol_system_void_dweller_system = {
 		orbit_angle = { min = 90 max = 270 }
 		flags = { ignore_startup_effect }
 		init_effect = {
+			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
 			clear_deposits = yes
 			add_deposit = d_minerals_5
 		}

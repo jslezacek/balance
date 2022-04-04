@@ -861,6 +861,7 @@ neighbor_t1_first_colony = {
 		name = j0Jo
 		orbit_angle = { min = 90 max = 270 }
 		init_effect = {
+			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
 			clear_deposits = yes
 			add_deposit = d_minerals_6
 		}
@@ -981,6 +982,7 @@ neighbor_t2_second_colony = {
 		name = s1p3R
 		orbit_angle = { min = 90 max = 270 }
 		init_effect = {
+			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
 			clear_deposits = yes
 			add_deposit = d_minerals_5
 		}

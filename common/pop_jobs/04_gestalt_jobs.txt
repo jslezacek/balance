@@ -1176,6 +1176,17 @@ agri_drone = {
 			}
 			food = -1
 		}
+		
+		# farmers produce +1 food with catalytic processing
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_catalytic_empire = yes
+				}
+			}
+			food = +1
+		}
 	}
 
 	weight = {

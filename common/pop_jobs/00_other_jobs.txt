@@ -302,6 +302,18 @@ livestock = {
 			}
 			food = 4
 		}
+		
+		# farmers produce +1 food with catalytic processing
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_catalytic_empire = yes
+				}
+			}
+			food = +1
+		}
+		
 		produces = {
 			trigger = {
 				is_organic_species = yes
@@ -364,7 +376,7 @@ bio_trophy = {
 			trigger = {
 				happiness >= 0.5
 			}
-			unity = 3 #debating change to 2.5
+			unity = 3
 		}
 	}
 
@@ -374,7 +386,7 @@ bio_trophy = {
 		}
 
 		modifier = {
-			planet_jobs_complex_drone_produces_mult = 0.0066 #changd from 0.01 to 0.0066, 2/3 the original
+			planet_jobs_complex_drone_produces_mult = 0.01 #returning to original
 		}
 	}
 
