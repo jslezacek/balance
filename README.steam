@@ -85,11 +85,12 @@
 
 [h1]Known issues:[/h1]
 [list]
-[*]
+[*] Charismatic trait not applied to ruler and synapse jobs correctly
 [/list]
 
 [h1] Changes from previous version [/h1]
 [list]
+[*] Bug #1: Charismatic trait not applied to rulers, entertainers and synapse jobs correctly
 [*] Proposal 3: Empire sprawl penalty was reduced from 25% to 15%, further reduce from 15% to 0%
 [*] Proposal 8: Martial Alliance fed type: High fleet centralization requiring lvl 4 martial fed, instead of requiring only lvl 3 martial fed.
 [*] Proposal 9: Make mega-engineering researchable y0 for ring world origin

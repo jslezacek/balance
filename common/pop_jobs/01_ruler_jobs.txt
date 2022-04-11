@@ -43,7 +43,7 @@ head_researcher = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.6
+			planet_amenities_add = 1 # increase from 0.6 -> 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -51,7 +51,7 @@ head_researcher = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.6
+			planet_amenities_add = -1 # increase from -0.6 -> -1
 		}
 	}
 
@@ -206,7 +206,7 @@ high_priest = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1
+			planet_amenities_add = 1.4 # increase from 1 -> 1.4
 		}
 	}
 	triggered_planet_modifier = {
@@ -214,7 +214,7 @@ high_priest = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1
+			planet_amenities_add = -1.4 # increase from -1 -> -1.4
 		}
 	}
 
@@ -342,7 +342,7 @@ politician = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.6
+			planet_amenities_add = 1 # increase from 0.6 -> 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -350,7 +350,7 @@ politician = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.6
+			planet_amenities_add = -1 # increase from -0.6 -> -1
 		}
 	}
 
@@ -469,7 +469,7 @@ noble = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.6
+			planet_amenities_add = 1 # increase from 0.6 -> 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -477,7 +477,7 @@ noble = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.6
+			planet_amenities_add = -1 # increase from 0.6 -> -1
 		}
 	}
 
@@ -608,7 +608,7 @@ merchant = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.6
+			planet_amenities_add = 1 # increase from 0.6 -> 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -616,7 +616,7 @@ merchant = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.6
+			planet_amenities_add = -1 # increase from -0.6 -> -1
 		}
 	}
 
@@ -751,7 +751,7 @@ executive = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.6
+			planet_amenities_add = 1 # increase from 0.6 -> 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -759,7 +759,7 @@ executive = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.6
+			planet_amenities_add = -1 # increase from -0.6 -> -1
 		}
 	}
 

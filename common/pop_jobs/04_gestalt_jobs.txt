@@ -302,7 +302,31 @@ synapse_drone = {
 			planet_amenities_no_happiness_add = 2
 		}
 	}
-
+	# fix synapse drone charismatic / repugnant trait
+	triggered_planet_modifier = {
+		potential = {
+			AND = {
+				has_active_tradition = tr_synchronicity_instinctive_synchronization
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 0.4
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			AND = {
+				has_active_tradition = tr_synchronicity_instinctive_synchronization
+				has_trait = trait_repugnant
+			}
+		}
+		modifier = {
+			planet_amenities_add = -0.4
+		}
+	}
+	
 	weight = {
 		weight = @synapse_drone_job_weight
 		modifier = {

@@ -958,7 +958,7 @@ entertainer = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 2
+			planet_amenities_add = 1.6 # reduced from 2 -> 1.6
 		}
 	}
 	triggered_planet_modifier = {
@@ -966,7 +966,7 @@ entertainer = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -2
+			planet_amenities_add = -1.6 # reduced from -2 -> -1.6
 		}
 	}
 	triggered_planet_modifier = {
