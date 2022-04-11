@@ -572,6 +572,14 @@ merchant = {
 		upkeep = {
 			consumer_goods = 2
 		}
+		# p37: add 2 unity to merchants with merchant_guilds civic
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {has_civic = civic_merchant_guilds}
+			}
+			unity = +2
+		}
 	}
 
 	triggered_planet_modifier = {

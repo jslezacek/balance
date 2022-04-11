@@ -4,9 +4,11 @@
 [*] Size penalty cost of traditions matches the cost scaling of tech
 [*] 1st guaranteed spawn next to your homeworld
 [*] 2nd guaranteed spawn max 2 jumps away
-[*] guaranteed planets won't spawn anomalies
-[*] have always at least 3 mining districts
-[*] add mineral asteroid +6, +5
+[*] Guaranteed planets won't spawn anomalies
+[*] Guaranteed planets have always at least 3 mining districts
+[*] Guaranteed planets add mineral asteroid +6, +5
+[*] Catalytic processing civic now makes food workers / livestock produce +1 food
+
 [/list]
 
 [b]Weapons:[/b]
@@ -26,7 +28,7 @@
 
 [b]Megacorp:[/b]
 [list]
-[*] Reduce sprawl from 25% to 15%
+[*] Reduce sprawl from 25% to 0%
 [*] Trade League/Consumer Benefits/ Marketplace of ideas consumer goods up 0.25 -> 0.3, unity 0.125 -> 0.15
 [/list]
 
@@ -35,9 +37,15 @@
 [*] home system spawns with 2 asteroids +6, +5 minerals
 [/list]
 
+[b]Post-Apocalyptic:[/b]
+[list]
+[*] Replace survivor trait with tomb world preference
+[*] Replace their guaranteeds with tomb worlds.
+[/list]
+
 [b]Gestalts:[/b]
 [list]
-[*] unity output for synapse, coordinator increased from 4 to 5
+[*] Unity output for synapse, coordinator increased from 4 to 5
 [*] Add +10% hab to hivemind trait
 [/list]
 [b]Bio:[/b]
@@ -54,11 +62,6 @@
 [b]Prosperous Unification:[/b]
 [list]
 [*] Removed 10% happiness, reduced amenities from 25% to 15%
-[/list]
-
-[b]Rogue servitor:[/b]
-[list]
-[*] Complex drone output from Bio Trophy reduced to 0.66%
 [/list]
 
 [b]Clone Army:[/b]
@@ -82,17 +85,20 @@
 
 [h1]Known issues:[/h1]
 [list]
-[*] [strike] ring world origin spawns without +5 mineral asteroid [/strike]
-[*] [strike] +5 / +6 mineral asteroids can spawn an anomaly in which case they lose the mineral deposit [/strike]
-[*] [strike] Sol starting system first colony (Alpha Centauri) missing  +6 mineral asteroid (pick deneb till fixed) [/strike]
-[*] [strike] Exalted priesthood high priest job gives 12 instead of 7 amenities [/strike]
+[*]
 [/list]
 
 [h1] Changes from previous version [/h1]
 [list]
-[*] Proposal 16 Tomb world origin: Replace survivor trait with tomb world preference. Replace their guaranteeds with tomb worlds.
-[*] Proposal 13: Catalytic processing civic now makes food workers produce +1 food, which would equal to rock-breakers civic of +1 mineral
-[*] Proposal 19: Civic: Rogue servitor Revert bio trophy boost to complex drone output back to 1%.
+[*] Proposal 3: Empire sprawl penalty was reduced from 25% to 15%, further reduce from 15% to 0%
+[*] Proposal 8: Martial Alliance fed type: High fleet centralization requiring lvl 4 martial fed, instead of requiring only lvl 3 martial fed.
+[*] Proposal 9: Make mega-engineering researchable y0 for ring world origin
+[*] Proposal 10: make climate restoration researchable for life seeded
+[*] Proposal 14: Both bio ascensions Engineered Evolution/Evolutionary Mastery get a 15% habitability bonus
+[*] Proposal 25: Decrease food cost of Tree of Life colony ships from 1000 to 750
+[*] Proposal 27: Catalytic Processing civic start with the tech "Hydroponics Farming " researched
+[*] Proposal 32: Make the lowest amount of minor artifacts from the first stage of precursors to be 2 (instead of 1 now)
+[*] Proposal 37: Make Merchant guilds give merchants 2 unity output
 [/list]
 
 [h1]Credits[/h1]

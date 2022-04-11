@@ -1,0 +1,26 @@
+namespace = wsc_events
+# Give techs research option for mega engineering
+
+country_event = {
+	id = wsc_events.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		# add mega engineering tech research option to ring world origin
+		if = {
+			limit = { has_origin = origin_shattered_ring }
+			add_research_option = tech_mega_engineering
+		}
+		# add climate restoration tech research option to life seeded origin
+		if = {
+			limit = { has_origin = origin_life_seeded }
+			add_research_option = tech_climate_restoration
+		}
+		# add technology hydroponics tech for Catalytic processing civic empire
+		if = {
+			limit = { is_catalytic_empire = yes }
+			give_technology = { message = no tech = tech_hydroponics }
+		}
+	}
+}

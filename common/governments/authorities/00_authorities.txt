@@ -290,7 +290,7 @@ auth_corporate = {
 
 	country_modifier = {
 		country_unity_produces_mult = 0.1
-		empire_size_penalty_mult = 0.15		# Lower sprawl from 0.25 -> 0.15
+		empire_size_penalty_mult = 0		# Lower sprawl from 0.25 -> 0
 	}
 
 	tags = {
