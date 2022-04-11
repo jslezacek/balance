@@ -1935,6 +1935,7 @@ shattered_ring_start = {
 			prevent_anomaly = yes                    # don't spawn anomaly on asteroid which override deposits
 			add_deposit = d_minerals_5
 		}
+	}
 		
 		neighbor_system = {
 			trigger = { num_guaranteed_colonies >= 2 }
@@ -1947,7 +1948,7 @@ shattered_ring_start = {
 			initializer = "neighbor_t1_first_colony"
 		}
 	}
-}
+
 ### Mega Shipyard - Randomly spawned
 mega_shipyard_init_01 = {
 	class = "rl_standard_stars"
