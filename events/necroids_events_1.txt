@@ -379,7 +379,8 @@ country_event = {
 						is_colony = no
 						has_planet_flag = prescripted_ideal
 					}
-					generate_very_early_primitives_on_planet = yes
+					# generate_very_early_primitives_on_planet = yes
+					generate_4_primitives_on_planet = yes
 					set_name = random
 					change_colony_foundation_date = -461
 
@@ -403,7 +404,7 @@ country_event = {
 						is_colony = no
 						has_planet_flag = prescripted_ideal
 					}
-					generate_very_early_primitives_on_planet = yes
+					generate_8_primitives_on_planet = yes
 					set_name = random
 					change_colony_foundation_date = -1275
 

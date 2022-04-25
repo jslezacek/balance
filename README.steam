@@ -1,19 +1,18 @@
 [h1] Changes from previous version [/h1]
 [list]
-[*] Bug1: Charismatic trait not applied to rulers, entertainers and synapse jobs correctly.
-[*] Proposal 3: Megacorp empire sprawl penalty was reduced to 0%
-[*] Proposal 8: Martial Alliance fed type: High fleet centralization requiring lvl 4 martial fed
-[*] Proposal 9: Make mega-engineering researchable y0 for ring world origin
-[*] Proposal 10: make climate restoration researchable for life seeded
-[*] Proposal 14: Both bio ascensions Engineered Evolution/Evolutionary Mastery get a 15% habitability bonus
-[*] Proposal 25: Decrease food cost of Tree of Life colony ships from 1000 to 750
-[*] Proposal 27: Catalytic Processing civic start with the tech "Hydroponics Farming " researched
-[*] Proposal 32: Make the lowest amount of minor artifacts from the first stage of precursors to be 2
-[*] Proposal 37: Make Merchant guilds give merchants 2 unity output
+Added:
+[*] P75: Fix necro primitive population sizes to be 8+4
+[*] P77: Increase weight for critical techs (motes, alloy mega-forges, mineral purification)
 [/list]
 
+Bugfix:
+[list]
+[*] b1 [Fixed] Scrap miner buff not applied to bio workers (3 mineral / 1.5 alloy)
+[*] b2 [Fixed] Sol system guaranteeds wrongly spawned anomaly
+[*] b4 [Fixed] Guaranteed mineral asteroid in rare case spawned special resources nodes, thus preventing building a mine
+[/list]
 
-[code]Checksum: 1c71[/code]
+[code]Checksum: abfa2[/code]
 
 [h1]Buffs:[/h1]
 [b]Generic:[/b]
@@ -24,8 +23,17 @@
 [*] Guaranteed planets won't spawn anomalies
 [*] Guaranteed planets have always at least 3 mining districts
 [*] Guaranteed planets add mineral asteroid +6, +5
-[*] Catalytic processing civic now makes food workers / livestock produce +1 food
-
+[*] Catalytic processing civic now makes food workers / livestock produce +1 food and has
+[*] Proposal 3: Megacorp empire sprawl penalty was reduced to 0%
+[*] Proposal 8: Martial Alliance fed type: High fleet centralization requiring lvl 4 martial fed
+[*] Proposal 9: Mega-engineering researchable y0 for ring world origin
+[*] Proposal 10: Climate restoration researchable for life seeded
+[*] Proposal 14: Both bio ascensions Engineered Evolution/Evolutionary Mastery get a 15% habitability bonus
+[*] Proposal 25: Decrease food cost of Tree of Life colony ships from 1000 to 750
+[*] Proposal 27: Catalytic Processing civic start with the tech "Hydroponics Farming " researched
+[*] Proposal 32: Make the lowest amount of minor artifacts from the first stage of precursors to be 2
+[*] Proposal 37: Make Merchant guilds give merchants 2 unity output
+[*] Bug1: Charismatic trait not applied to rulers, entertainers and synapse jobs correctly.
 [/list]
 
 [b]Weapons:[/b]
