@@ -1930,6 +1930,7 @@ shattered_ring_start = {
 		orbit_distance = 28
 		name = s1p3R
 		orbit_angle = { min = 90 max = 270 }
+		flags = { ignore_startup_effect }
 		init_effect = {
 			clear_deposits = yes
 			prevent_anomaly = yes                    # don't spawn anomaly on asteroid which override deposits

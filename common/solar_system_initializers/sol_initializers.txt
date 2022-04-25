@@ -359,6 +359,7 @@ sol_neighbor_t1_first_colony = {
 		orbit_distance = 21
 		name = j0Jo
 		orbit_angle = { min = 90 max = 270 }
+		flags = { ignore_startup_effect }
 		init_effect = {
 			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
 			clear_deposits = yes
@@ -423,6 +424,7 @@ sol_neighbor_t1_first_colony = {
 
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
+			prevent_anomaly = yes
 		}
 	}
 
@@ -649,6 +651,7 @@ sol_neighbor_t2_second_colony = {
 		orbit_distance = 21
 		name = s1p3R
 		orbit_angle = { min = 90 max = 270 }
+		flags = { ignore_startup_effect }
 		init_effect = {
 			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
 			clear_deposits = yes
@@ -671,6 +674,7 @@ sol_neighbor_t2_second_colony = {
 
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
+			prevent_anomaly = yes # prevent anomaly
 		}
 
 		change_orbit = @base_moon_distance
