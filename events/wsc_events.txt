@@ -1,5 +1,4 @@
 namespace = wsc_events
-# Give techs research option for mega engineering
 
 country_event = {
 	id = wsc_events.1
