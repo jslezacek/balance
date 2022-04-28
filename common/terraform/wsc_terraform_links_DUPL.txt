@@ -1,0 +1,272 @@
+@basic_cost = 3750
+@basic_duration = 2700
+@candicate_cost = 7500
+@candicate_duration = 4320
+
+################
+## Tomb World ## p40
+################
+
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_nuked"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @basic_cost
+		}
+	}
+
+	duration = @basic_duration
+
+	condition = {
+		AND = {
+		has_origin = origin_post_apocalyptic
+		has_technology = "tech_terrestrial_sculpting"
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_nuked"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @basic_cost
+		}
+	}
+
+	duration = @basic_duration
+
+	condition = {
+		AND = {
+			has_technology = "tech_terrestrial_sculpting"
+			has_origin = origin_post_apocalyptic
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_nuked"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @basic_cost
+		}
+	}
+
+	duration = @basic_duration
+
+	condition = {
+		AND = {
+			has_technology = "tech_terrestrial_sculpting"
+			has_origin = origin_post_apocalyptic
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_nuked"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @basic_cost
+		}
+	}
+
+	duration = @basic_duration
+
+	condition = {
+		AND = {
+			has_technology = "tech_terrestrial_sculpting"
+			has_origin = origin_post_apocalyptic
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_tundra"
+	to = "pc_nuked"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @basic_cost
+		}
+	}
+
+	duration = @basic_duration
+
+	condition = {
+		AND = {
+			has_technology = "tech_terrestrial_sculpting"
+			has_origin = origin_post_apocalyptic
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_alpine"
+	to = "pc_nuked"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @basic_cost
+		}
+	}
+
+	duration = @basic_duration
+
+	condition = {
+		AND = {
+			has_technology = "tech_terrestrial_sculpting"
+			has_origin = origin_post_apocalyptic
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_nuked"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @basic_cost
+		}
+	}
+
+	duration = @basic_duration
+
+	condition = {
+		AND = {
+			has_technology = "tech_terrestrial_sculpting"
+			has_origin = origin_post_apocalyptic
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_nuked"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @basic_cost
+		}
+	}
+
+	duration = @basic_duration
+
+	condition = {
+		AND = {
+			has_technology = "tech_terrestrial_sculpting"
+			has_origin = origin_post_apocalyptic
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_ocean"
+	to = "pc_nuked"
+
+	resources = {
+		category = terraforming_ocean
+
+		cost = {
+			energy = @basic_cost
+		}
+	}
+
+	duration = @basic_duration
+	
+	
+	condition = {
+		AND = {
+			has_technology = "tech_terrestrial_sculpting"
+			has_origin = origin_post_apocalyptic
+		}
+	}
+}
+
+##################
+## Barren World ##
+##################
+
+# The AI is rigged to always pick the one with the highest habitability. So nothing complicated needed for weights here either
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_nuked"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @candicate_cost
+		}
+	}
+
+	duration = @candicate_duration
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+	condition = {
+		AND = {
+			has_technology = "tech_climate_restoration"
+			has_origin = origin_post_apocalyptic
+		}
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+}
+
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_nuked"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @candicate_cost
+		}
+	}
+
+	duration = @candicate_duration
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+	condition = {
+		AND = {
+			has_technology = "tech_climate_restoration"
+			has_origin = origin_post_apocalyptic
+		}
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+}
