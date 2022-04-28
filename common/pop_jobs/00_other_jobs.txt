@@ -303,13 +303,22 @@ livestock = {
 			food = 4
 		}
 		
-		# farmers produce +1 food with catalytic processing
+		# livestock produce +1 food with catalytic processing
 		produces = {
 			trigger = {
 				exists = owner
 				owner = {
 					is_catalytic_empire = yes
 				}
+			}
+			food = +1
+		}
+		
+		# livestock produce +1 food with agrarian_idyll
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_valid_civic = civic_agrarian_idyll }
 			}
 			food = +1
 		}
@@ -386,7 +395,7 @@ bio_trophy = {
 		}
 
 		modifier = {
-			planet_jobs_complex_drone_produces_mult = 0.01 #returning to original
+			planet_jobs_complex_drone_produces_mult = 0.0075 #reducing from 0.01 to 0.0075
 		}
 	}
 

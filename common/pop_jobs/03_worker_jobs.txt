@@ -1670,6 +1670,15 @@ angler = {
 			}
 			food = +1
 		}
+		
+		# farmers produce +1 food with agrarian_idyll
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_valid_civic = civic_agrarian_idyll }
+			}
+			food = +1
+		}
 	}
 
 	triggered_planet_modifier = {

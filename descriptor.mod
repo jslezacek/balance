@@ -4,5 +4,5 @@ tags={
 }
 name="WSC Balance Mod"
 picture="thumbnail.png"
-supported_version="3.3.*"
+supported_version="3.3.4"
 remote_file_id="2783646881"

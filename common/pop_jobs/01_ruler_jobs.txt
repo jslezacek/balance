@@ -563,7 +563,7 @@ merchant = {
 	possible_precalc = can_fill_ruler_job
 
 	planet_modifier = {
-		planet_amenities_add = 5 # increased from 3 to 5
+		planet_amenities_add = 3
 		trade_value_add = 12
 	}
 
@@ -571,14 +571,6 @@ merchant = {
 		category = planet_merchants
 		upkeep = {
 			consumer_goods = 2
-		}
-		# p37: add 2 unity to merchants with merchant_guilds civic
-		produces = {
-			trigger = {
-				exists = owner
-				owner = {has_civic = civic_merchant_guilds}
-			}
-			unity = +2
 		}
 	}
 
@@ -608,7 +600,7 @@ merchant = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1 # increase from 0.6 -> 1
+			planet_amenities_add = 0.6
 		}
 	}
 	triggered_planet_modifier = {
@@ -616,7 +608,7 @@ merchant = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1 # increase from -0.6 -> -1
+			planet_amenities_add = -0.6
 		}
 	}
 

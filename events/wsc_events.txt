@@ -21,5 +21,11 @@ country_event = {
 			limit = { is_catalytic_empire = yes }
 			give_technology = { message = no tech = tech_hydroponics }
 		}
+		# add technology robomodding and droids unlocked for mechanist origin.
+		if = {
+			limit = { has_origin = origin_mechanists }
+			give_technology = { message = no tech = tech_robomodding }
+			add_research_option = tech_droid_workers
+		}
 	}
 }
