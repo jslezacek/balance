@@ -1,111 +1,61 @@
-[h1] Changes from previous version [/h1]
+[h1] Added [/h1]
 [list]
-Added:
-[*] P75: Fix necro primitive population sizes to be 8+4
-[*] P77: Increase weight for critical techs (motes, alloy mega-forges, mineral purification)
+[*] b3 [Fixed] Updated english localization description
+[*] p35: Increase relic selling rate 5 per year
+[*] p42: Mechanist origin starts with robo modding tech researched and Droid tech unlocked
+[*] p40: Allow TombWorld origin terraforming into tomb worlds
+[*] p45: Agrarian idyll +1 food production
+[*] p55: Fleet governor cost reduction removed and ship build speed increased from +20% -> +30%
+[*] p60: Permanent Employment zombie trait -200% upkeep instead of -100%
+[*] p62: Merchant upkeep down from 2 CG -> 1 CG
+[*] p64: Reduce bio-trophy complex-drone output bonus to 0.75%
+[*] p70: Reduce clone-vat assembly speed from 2/5/7/10/15 to 2/3/5/6/9
+[*] p72: Syncretic buff: serviles trait +10% raw resource increase to +20%
+[*] p48: Doorstep +95% gateway activation tech towards end of the story arc
 [/list]
 
-Bugfix:
-[list]
-[*] b1 [Fixed] Scrap miner buff not applied to bio workers (3 mineral / 1.5 alloy)
-[*] b2 [Fixed] Sol system guaranteeds wrongly spawned anomaly
-[*] b4 [Fixed] Guaranteed mineral asteroid in rare case spawned special resources nodes, thus preventing building a mine
-[/list]
+[code]Checksum: 6aae [/code]
 
-[code]Checksum: abfa2[/code]
-
-[h1]Buffs:[/h1]
-[b]Generic:[/b]
+[h1]Active Changes[/h1]
 [list]
+[*] Necrophage origin primitive population sizes to be 8+4
+[*] Increase weight for critical techs (motes, alloy mega-forges, mineral purification)
 [*] Size penalty cost of traditions matches the cost scaling of tech
 [*] 1st guaranteed spawn next to your homeworld
 [*] 2nd guaranteed spawn max 2 jumps away
 [*] Guaranteed planets won't spawn anomalies
 [*] Guaranteed planets have always at least 3 mining districts
 [*] Guaranteed planets add mineral asteroid +6, +5
-[*] Catalytic processing civic now makes food workers / livestock produce +1 food and has
-[*] Proposal 3: Megacorp empire sprawl penalty was reduced to 0%
-[*] Proposal 8: Martial Alliance fed type: High fleet centralization requiring lvl 4 martial fed
-[*] Proposal 9: Mega-engineering researchable y0 for ring world origin
-[*] Proposal 10: Climate restoration researchable for life seeded
-[*] Proposal 14: Both bio ascensions Engineered Evolution/Evolutionary Mastery get a 15% habitability bonus
-[*] Proposal 25: Decrease food cost of Tree of Life colony ships from 1000 to 750
-[*] Proposal 27: Catalytic Processing civic start with the tech "Hydroponics Farming " researched
-[*] Proposal 32: Make the lowest amount of minor artifacts from the first stage of precursors to be 2
-[*] Proposal 37: Make Merchant guilds give merchants 2 unity output
-[*] Bug1: Charismatic trait not applied to rulers, entertainers and synapse jobs correctly.
-[/list]
-
-[b]Weapons:[/b]
-[list]
-[*] Proton / Neutron Launchers damage and cooldown reduced to match with kinetic artilery
-[/list]
-
-[b]Ringworld:[/b]
-[list]
-[*] Scrap miner +1 minerals, +0.5 alloys from the job role
-[/list]
-
-[b]Remnants:[/b]
-[list]
-[*] Add 2 burrows blockers for 2 pops
-[/list]
-
-[b]Megacorp:[/b]
-[list]
-[*] Reduce sprawl from 25% to 0%
+[*] Catalytic processing civic now makes food workers / livestock produce +1 food and start with the tech "Hydroponics Farming " researched
+[*] Proton / Neutron Launchers damage and cooldown reduced to match with kinetic artilery.
+[*] Ring World scrap miner +1 minerals, +0.5 alloys from the job role
+[*] Remnants origin get 2 burrows blockers for 2 pops
+[*] MegaCorp reduce sprawl from 25% to 0%
 [*] Trade League/Consumer Benefits/ Marketplace of ideas consumer goods up 0.25 -> 0.3, unity 0.125 -> 0.15
-[/list]
-
-[b]Void dwellers:[/b]
-[list]
-[*] home system spawns with 2 asteroids +6, +5 minerals
-[/list]
-
-[b]Post-Apocalyptic:[/b]
-[list]
-[*] Replace survivor trait with tomb world preference
-[*] Replace their guaranteeds with tomb worlds.
-[/list]
-
-[b]Gestalts:[/b]
-[list]
+[*] Void Dweller home system spawns with 2 asteroids +6, +5 minerals
+[*] Post-Apocalyptic replaced survivor trait with tomb world preference. Guaranteeds are tomb worlds
 [*] Unity output for synapse, coordinator increased from 4 to 5
-[*] Add +10% hab to hivemind trait
-[/list]
-[b]Bio:[/b]
-[list]
-[*] leaders +2 amenities, entertainers -2 amenities
-[/list]
-
-[h1]Nerfs:[/h1]
-[b]Generic:[/b]
-[list]
+[*] Fixed charismatic / repugnant trait not being applied to synapse drones.
+[*] Add +10% habitability to hivemind trait
+[*] Ruler jobs +2 amenities, entertainers -2 amenities
 [*] Aquatic Trait now costs 3 points
-[/list]
-
-[b]Prosperous Unification:[/b]
-[list]
-[*] Removed 10% happiness, reduced amenities from 25% to 15%
-[/list]
-
-[b]Clone Army:[/b]
-[list]
-[*] Fire rate descended=10% (down from 15%)
-[*] Fire rate normal=15%  (down from 25%)
-[*] Fire rate ascended=20% (down from 35%)
-[*] Alloys from Clone Fertility project completion 1000 (down from 2000)
-[*] Specialist output from ascendant event=10% (down from 25%)
-[*] Leader pop output from ascendant event=10% (down from 40%)
-[*] Army damage from ascendant=50% (down from 75%)
-[/list]
-
-[b]Bios:[/b]
-[list]
-[*] Fleet focus rulers cost reduction lowered from 20% -> 10%
-[*] Emergency re-election cost for oligarchy/corporate increased to 2500 unity (up from 250)
+[*] Prosperous Unification removed 10% happiness, reduced amenities from 25% to 15%
+[*] Clone Army fire-rate descended 10%, normal 15%, ascended 20%
+[*] Clone fertility project completion alloy bonus 1000 (down from 2000)
+[*] Clone Army Specialist output from ascendant event 10% (down from 25%), Leader output 10% (down from 40%)
+[*] Clone Army damage from ascendant 50% (down from 75%)
+[*] Fleet focus rulers cost 10%
+[*] Emergency re-election cost for oligarchy/corporate increased to 2500 unity
 [*] Ruler Trait Military Pioneer ship build cost AND ship upgrade cost reduction from 10% to 5%
 [*] Ruler Naval Agenda Fleet expansion ship cost reduction from 10% to 5%
+[*] p8: Martial Alliance fed type: High fleet centralization requiring lvl 4 martial fed
+[*] p9: Make mega-engineering researchable y0 for ring world origin
+[*] p10: make climate restoration researchable for life seeded
+[*] p14: Both bio ascensions Engineered Evolution/Evolutionary Mastery get a 15% habitability bonus
+[*] p25: Decrease food cost of Tree of Life colony ships from 1000 to 750
+[*] p27: Catalytic Processing civic start with the tech "Hydroponics Farming " researched
+[*] p32: Make the lowest amount of minor artifacts from the first stage of precursors to be 2
+[*] p37: Make Merchant guilds give merchants 2 unity output
 [/list]
 
 [h1]Known issues:[/h1]
@@ -115,6 +65,6 @@ Bugfix:
 [h1]Credits[/h1]
 [list]
 [*] Paradox Interactive for making Stellaris
-[*] Modders Salvor, Nebulosity
+[*] Modders Salvor, MissNebulosity, MrFreake, Lyra
 [*] ISS and WSC Stellaris community
 [/list]

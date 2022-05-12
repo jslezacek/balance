@@ -72,6 +72,8 @@ sol_system_initializer = {
 		flags = { planet_earth }
 
 		init_effect = {
+			save_global_event_target_as = sol_system_earth
+
 			prevent_anomaly = yes
 		}
 
@@ -319,6 +321,17 @@ sol_neighbor_t1 = {
 	planet = {
 		count = { min = 2 max = 5 }
 		orbit_distance = 20
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t2_second_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies < 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t2_no_guaranteed_colony"
 	}
 }
 
@@ -869,6 +882,8 @@ com_sol_system = {
 		flags = { planet_earth }
 
 		init_effect = {
+			save_global_event_target_as = sol_system_earth
+
 			prevent_anomaly = yes
 			random_country = {
 				limit = { has_country_flag = human_2 }
@@ -1557,6 +1572,8 @@ lost_colony_sol_system = {
 		}
 
 		init_effect = {
+			save_global_event_target_as = sol_system_earth
+
 			random_country = {
 				limit = {
 					species_portrait = human

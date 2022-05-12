@@ -3,12 +3,12 @@
  ap_engineered_evolution_modifier_desc:1 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$\n§HUnlocks Building:§! $building_clone_vats$\n$MOD_POP_ENVIRONMENT_TOLERANCE$: $HAB|%0=+$"
  ap_evolutionary_mastery_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$\n$MOD_POP_ENVIRONMENT_TOLERANCE$: $HAB|%0=+$"
  
- # common/artifact_actions/~wsc_artifact_actions_LIOS.txt
+ # common/artifact_actions/artifact_actions.txt
  trade_policy_consumer_goods_desc:0 "Profits and taxes must take second place to improving the lives of our citizens. We should focus our trade efforts towards the manufacture and distribution of everyday necessities.\n\n§EEach collected £trade_value£ §YTrade Value§! earns us £energy£ §Y0.5§! and £consumer_goods£ §Y0.3§!§!" # updating consumer_goods from 0.25 to 0.3 See common/trade_conversions/00_trace_conversions.txt
  trade_policy_unity_desc:2 "Trade can be used not only to move goods around, but also to facilitate the spread of ideas. We should focus our trade efforts towards ensuring that the message of our government is heard on all planets where we do business.\n\n§EEach collected £trade_value£ §YTrade Value§! earns us £energy£ §Y0.5§! and £unity£ §Y0.15§!§!" # updating unity from 0.125 to 0.15 See common/trade_conversions/00_trace_conversions.txt
  trade_policy_trade_league_desc:2 "By banding together in a trade league, we are able to prosper and secure profits on a whole new level.\n\n§EEach collected £trade_value£ §YTrade Value§! earns us £energy£ §Y0.5§!, £unity£ §Y0.15§! and £consumer_goods£ §Y0.3§!§!" # updating consumer_goods from 0.25 to 0.3 and unity from 0.125 to 0.15. See common/trade_conversions/00_trace_conversions.txt
  
- # common/artifact_actions/~wsc_artifact_actions_LIOS.txt
+ # common/artifact_actions/artifact_actions.txt
  artifact_sell_collector_5:5 "Sell 5 to Private collectors"
  artifact_sell_collector_5_desc:0 "Put 5 of our minor artifacts up for auction to private collectors."
  artifact_sell_cooldown_5:0 "$artifact_sell_collector$ Cooldown"
@@ -19,7 +19,7 @@
  civic_tooltip_hive_catalytic_processing_effects:0 "Replaces £job_alloy_drone£ §Y$job_alloy_drone_plural$§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$."\n\n£food£ §YFood§! from £job_agri_drone£ §Y$job_agri_drone$§! §G+1§!\n£food£ §YFood§! from £job_livestock£ §Y$job_livestock$§! §G+1§!\n§Y$tech_hydroponics$§! §Gresearched§!."
  civic_tooltip_machine_catalytic_processing_effects:0 "Replaces £job_fabricator£ §Y$job_fabricator_plural$§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$."\n\n£food£ §YFood§! from £job_agri_drone£ §Y$job_agri_drone$§! §G+1§!\n£food£ §YFood§! from £job_livestock£ §Y$job_livestock$§! §G+1§!\n§Y$tech_hydroponics$§! §Gresearched§!."
  civic_tooltip_merchant_guilds_effects:3 "£building£ §YCapital Buildings§! provide £job_merchant£ §Y$job_merchant$§! jobs\n£unity£ Unity from £job_merchant£ §Y$job_merchant$§! §G+2§! "
- civic_tooltip_agrarian_idyll_effects:7 "§YGenerator§!, §YMining§! and §YAgriculture Districts§! provide §G1§! more £housing£ §YHousing§!\n§YCity Districts§! provide §R1§! less £housing£ §YHousing§!\n£job_farmer£ §Y$job_farmer_plural$§! also produce §G2§! £amenities£ §YAmenities§!\nEvery §Y4§! §HAgriculture Districts§! grant §G1§! £building£ §YBuilding Slot§!.\n\n£food£ §YFood§! from £job_farmer£ §Y$job_farmer$§! §G+1§!\n£food£ §YFood§! from £job_angler£ §Y$job_angler$§! §G+1§!\n£food£ §YFood§! from £job_livestock£ §Y$job_livestock$§! §G+1§!"
+ civic_tooltip_agrarian_idyll_effects:7 "§YGenerator§!, §YMining§! and §YAgriculture Districts§! provide §G1§! more £housing£ §YHousing§!\n§YCity Districts§! provide §R1§! less £housing£ §YHousing§!\n£job_farmer£ §Y$job_farmer_plural$§! also produce §G2§! £amenities£ §YAmenities§!\nEvery §Y4§! §HAgriculture Districts§! grant §G1§! £building£ §YBuilding Slot§!.\n\n£food£ §YFood§! from £job_farmer£ §Y$job_farmer$§! §G+1§!\n£food£ §YFood§! from £job_livestock£ §Y$job_livestock$§! §G+1§!"
  civic_tooltip_permanent_employment_effects:0 "Can build £building£ §Y$building_posthumous_employment_center$§!\n$job_reassigner_effect_desc$\nDefeated organic Leviathans can sometimes be resurrected."
  
  # ORIGINS
