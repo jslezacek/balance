@@ -351,7 +351,11 @@ bio_trophy = {
 			trigger = {
 				happiness >= 0.5
 			}
-			unity = 3
+			unity = 2 # 3 -> 2
+		}
+		# add upkeep CGs
+		upkeep = {
+			consumer_goods = 0.5
 		}
 	}
 
@@ -361,7 +365,7 @@ bio_trophy = {
 		}
 
 		modifier = {
-			planet_jobs_complex_drone_produces_mult = 0.0075 #reducing from 0.01 to 0.0075
+			planet_jobs_complex_drone_produces_mult = 0.01
 		}
 	}
 

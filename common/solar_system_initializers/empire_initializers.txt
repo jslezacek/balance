@@ -880,7 +880,7 @@ neighbor_t1_first_colony = {
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
 			prevent_anomaly = yes					# don't spawn anomaly on guaranteed
-			add_deposit = d_rich_mountain			# add +3 mining districts
+			#add_deposit = d_rich_mountain			# add +3 mining districts
 		}
 	}
 
@@ -976,19 +976,19 @@ neighbor_t2_second_colony = {
 	change_orbit = 25
 
 	# add asteroid with 5 minerals to guaranteed colony
-	planet = {
-		count = 1
-		class = pc_asteroid
-		orbit_distance = 21
-		name = s1p3R
-		orbit_angle = { min = 90 max = 270 }
-		flags = { ignore_startup_effect }
-		init_effect = {
-			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
-			clear_deposits = yes
-			add_deposit = d_minerals_5
-		}
-	}
+	#planet = {
+	#	count = 1
+	#	class = pc_asteroid
+	#	orbit_distance = 21
+	#	name = s1p3R
+	#	orbit_angle = { min = 90 max = 270 }
+	#	flags = { ignore_startup_effect }
+	#	init_effect = {
+	#		prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
+	#		clear_deposits = yes
+	#		add_deposit = d_minerals_5
+	#	}
+	#}
 
 	planet = {
 		count = 2
@@ -1010,7 +1010,7 @@ neighbor_t2_second_colony = {
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
 			prevent_anomaly = yes					# don't spawn anomaly on guaranteed
-			add_deposit = d_rich_mountain			# add +3 mining districts
+			#add_deposit = d_rich_mountain			# add +3 mining districts
 		}
 
 		moon = {

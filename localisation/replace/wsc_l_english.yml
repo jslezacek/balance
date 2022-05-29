@@ -1,7 +1,7 @@
 ﻿l_english:
 # ASCENSIONS
- ap_engineered_evolution_modifier_desc:1 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$\n§HUnlocks Building:§! $building_clone_vats$\n$MOD_POP_ENVIRONMENT_TOLERANCE$: $HAB|%0=+$"
- ap_evolutionary_mastery_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$\n$MOD_POP_ENVIRONMENT_TOLERANCE$: $HAB|%0=+$"
+# ap_engineered_evolution_modifier_desc:1 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$\n§HUnlocks Building:§! $building_clone_vats$\n$MOD_POP_ENVIRONMENT_TOLERANCE$: $HAB|%0=+$"
+# ap_evolutionary_mastery_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$\n$MOD_POP_ENVIRONMENT_TOLERANCE$: $HAB|%0=+$"
  
  # common/artifact_actions/artifact_actions.txt
  trade_policy_consumer_goods_desc:0 "Profits and taxes must take second place to improving the lives of our citizens. We should focus our trade efforts towards the manufacture and distribution of everyday necessities.\n\n§EEach collected £trade_value£ §YTrade Value§! earns us £energy£ §Y0.5§! and £consumer_goods£ §Y0.3§!§!" # updating consumer_goods from 0.25 to 0.3 See common/trade_conversions/00_trace_conversions.txt
@@ -34,3 +34,6 @@
  # TRAITS
  TRAIT_ZOMBIE_EFFECT:0 "$mod_planet_jobs_produces_mult$: §R-25%§!\nPop Upkeep reduced by: §G200%§!\nCannot generate §YLeaders§!\nCannot be employed in §Y$pop_cat_ruler$§! or §Y$pop_cat_specialist$§! Jobs"
  TRAIT_SYNCRETIC_PROLES_EFFECT:0 "$MOD_POP_HAPPINESS$: §G+10%§!\n$mod_planet_jobs_produces_mult$: §G+20%§!\nCannot generate §YLeaders§!\nCannot be employed in §Y$pop_cat_ruler$§! or §Y$pop_cat_specialist$§! Jobs"
+ 
+ d_segment_trash_desc:0 "Remains of ancient robo battles."
+ d_segment_trash:0 "£blocker£ Ancient Trash"

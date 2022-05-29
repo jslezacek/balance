@@ -469,6 +469,12 @@ artifact_sell_collector_5 = {
 			minor_artifacts = 5
 		}
 	}
+	
+	potential = {
+		is_gestalt = no
+		owner = { has_origin = origin_shoulders_of_giants }
+	}
+	
 	effect = {
 		add_resource = { energy = 2500 }
 		hidden_effect = {

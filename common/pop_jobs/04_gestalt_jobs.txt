@@ -242,7 +242,7 @@ coordinator = {
 	resources = {
 		category = planet_administrators
 		produces = {
-			unity = 5 #changed from 4 to 5
+			unity = 4
 		}
 		upkeep = {
 			energy = 4
@@ -337,7 +337,7 @@ synapse_drone = {
 	resources = {
 		category = planet_administrators
 		produces = {
-			unity = 5 #changed from 4 to 5 
+			unity = 4
 		}
 		upkeep = {
 			trigger = {
@@ -1606,7 +1606,7 @@ chronicle_drone = {
 	resources = {
 		category = planet_administrators
 		produces = {
-			unity = 2
+			unity = 3 # up 2 -> 3
 			society_research = 2
 		}
 		upkeep = {
@@ -1694,8 +1694,8 @@ scrap_miner_drone = {
 	resources = {
 		category = planet_miners
 		produces = {
-			minerals = 3		# increase 2 to 3
-			alloys = 1.5		# increase 1 to 1.5
+			minerals = 2
+			alloys = 1
 		}
 	}
 

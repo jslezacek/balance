@@ -1019,7 +1019,7 @@
 		DIPLOMACY_WEIGHT_TECHNOLOGY_FACTOR		= 0.1		# Factors Technology Level before it is added to diplo weight
 
 		EMPIRE_SIZE_TECH_COST_PENALTY			= 0.001	# Per empire size above base
-		EMPIRE_SIZE_TRADITION_COST_PENALTY		= 0.001	# Per empire size above base # Reduced from 0.002 -> 0.001
+		EMPIRE_SIZE_TRADITION_COST_PENALTY		= 0.002	# Per empire size above base # Reduced from 0.002 -> 0.001
 
 		NUM_TECH_ALTERNATIVES					= 3
 		TECH_WEIGHT_BASE						= 10

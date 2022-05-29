@@ -1487,7 +1487,7 @@ fleet_contribution_high_martial = {
 		has_federation_type = military_federation
 	}
 	required_centralization = {
-		base = 4 # increased to 4 from 3
+		base = 3
 	}
 	modifier =	{
 		description = "fleet_contribution_high_effect"

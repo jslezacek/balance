@@ -2,7 +2,7 @@ version="1"
 tags={
 	"Balance"
 }
-name="WSC Balance Mod"
+name="Stellaris: Balanced Edition"
 picture="thumbnail.png"
-supported_version="3.3.4"
+supported_version="3.4.*"
 remote_file_id="2783646881"

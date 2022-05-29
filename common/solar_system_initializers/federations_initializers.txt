@@ -1810,7 +1810,7 @@ scion_fallen_2 = {
 shattered_ring_start = {
 	flags = { empire_home_system ring_world_built }
 	usage = origin
-
+	
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
@@ -1830,9 +1830,9 @@ shattered_ring_start = {
 			orbit_distance = 45
 		}
 	}
-
+	
 	class = "sc_g"
-
+	
 	planet = {
 		class = star
 		orbit_distance = 0
@@ -1847,7 +1847,7 @@ shattered_ring_start = {
 		orbit_angle = 240
 		orbit_distance = 0
 	}
-
+	
 	planet = {
 		class = "pc_ringworld_seam"
 		name = "NAME_Ring_Section"
@@ -1921,20 +1921,206 @@ shattered_ring_start = {
 		orbit_distance = 5
 	}
 	
-	# add asteroid with 5 minerals to guaranteed colony
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t2_second_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = @guaranteed_jumps
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+
+# Shattered Ring Origin
+shattered_ring_start_buff = {
+	flags = { empire_home_system ring_world_built }
+	usage = origin
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	class = "sc_g"
+
 	planet = {
-		count = 1
-		class = pc_asteroid
-		orbit_distance = 28
-		name = s1p3R
-		orbit_angle = { min = 90 max = 270 }
-		flags = { ignore_startup_effect }
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+	}
+	
+	change_orbit = 45
+	
+	# SECTION A
+	planet = {
+		class = "pc_ringworld_tech"
+		orbit_angle = 0
+		orbit_distance = 0
+	}
+	
+	planet = {
+		class = "pc_shattered_ring_habitable"
+		name = "NAME_Ring_Section"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		starting_planet = yes
+		flags = { ignore_startup_effect megastructure }
 		init_effect = {
-			clear_deposits = yes
-			prevent_anomaly = yes                    # don't spawn anomaly on asteroid which override deposits
-			add_deposit = d_minerals_5
+			prevent_anomaly = yes
 		}
 	}
+	
+	planet = {
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	
+	# SECTION B
+	planet = {
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	
+	planet = {
+	class = "pc_shattered_ring_habitable"
+	name = "NAME_Ring_Section"
+	orbit_angle = 30
+	orbit_distance = 0
+	deposit_blockers = none
+	modifiers = none
+	flags = { ignore_startup_effect megastructure }
+	init_effect = {
+		prevent_anomaly = yes
+		while = {
+			count = 13
+			add_deposit = d_segment_trash
+		}
+	}
+	}
+	
+	planet = {
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	
+	# SECTION C
+	planet = {
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	
+	planet = {
+		class = "pc_shattered_ring_habitable"
+		name = "NAME_Ring_Section"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		flags = { ignore_startup_effect megastructure }
+		init_effect = {
+			prevent_anomaly = yes
+			while = {
+				count = 13
+				add_deposit = d_segment_trash
+			}
+		}
+	}
+	
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	
+	# IRREPARABLE
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		name = "NAME_Irreparable_Damage"
+		orbit_angle = 0
+		orbit_distance = 0
+		flags = { ignore_startup_effect starting_mining_target starting_deposit}
+
+		init_effect = {
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = -15
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = 0
+				}
+			}
+			set_deposit = d_engineering_5
+			set_planet_flag = starting_research_target
+			set_planet_flag = starting_deposit
+		}
+	}
+
+	planet = {
+		class = "pc_shattered_2"
+		name = "NAME_The_Interloper"
+		orbit_distance = -5
+		orbit_angle = 0
+		size = 5
+		has_ring = no
+		flags = { ignore_startup_effect starting_mining_target starting_deposit }
+		init_effect = {
+			set_deposit = d_minerals_10
+		}
+	}
+
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		name = "NAME_Ring_Section"
+		orbit_angle = 30
+		orbit_distance = 5
+	}
+	
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_Ring_Section"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	
+	
+	# add asteroid with 5 minerals to guaranteed colony
+	#planet = {
+	#	count = 1
+	#	class = pc_asteroid
+	#	orbit_distance = 28
+	#	name = s1p3R
+	#	orbit_angle = { min = 90 max = 270 }
+	#	flags = { ignore_startup_effect }
+	#	init_effect = {
+	#		clear_deposits = yes
+	#		prevent_anomaly = yes                    # don't spawn anomaly on asteroid which override deposits
+	#		add_deposit = d_minerals_5
+	#	}
+	#}
 		
 		neighbor_system = {
 			trigger = { num_guaranteed_colonies >= 2 }
@@ -2900,19 +3086,19 @@ sol_system_void_dweller_system = {
 	}
 	
 	# add asteroid with 5 minerals to vd home system
-	planet = {
-		count = 1
-		class = pc_asteroid
-		orbit_distance = 21
-		name = s1p3R
-		orbit_angle = { min = 90 max = 270 }
-		flags = { ignore_startup_effect }
-		init_effect = {
-			prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
-			clear_deposits = yes
-			add_deposit = d_minerals_5
-		}
-	}
+	#planet = {
+	#	count = 1
+	#	class = pc_asteroid
+	#	orbit_distance = 21
+	#	name = s1p3R
+	#	orbit_angle = { min = 90 max = 270 }
+	#	flags = { ignore_startup_effect }
+	#	init_effect = {
+	#		prevent_anomaly = yes					# don't spawn anomaly on asteroid which override deposits
+	#		clear_deposits = yes
+	#		add_deposit = d_minerals_5
+	#	}
+	#}
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }

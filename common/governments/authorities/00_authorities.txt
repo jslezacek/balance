@@ -182,7 +182,7 @@ auth_hive_mind = {
 	country_modifier = {
 		pop_growth_speed = 0.25
 		empire_size_penalty_mult = -0.25
-		pop_environment_tolerance = 0.1	# added habitability +10% to hive mind
+		#pop_environment_tolerance = 0.1	# added habitability +10% to hive mind
 	}
 
 	tags = {
@@ -290,7 +290,7 @@ auth_corporate = {
 
 	country_modifier = {
 		country_unity_produces_mult = 0.1
-		empire_size_penalty_mult = 0		# Lower sprawl from 0.25 -> 0
+		empire_size_penalty_mult = 0.15		# Lower sprawl from 0.25 -> 0.15
 	}
 
 	tags = {

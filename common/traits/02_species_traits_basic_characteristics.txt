@@ -38,6 +38,158 @@ trait_hive_mind = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_ruler_hive_mind.dds"
 }
 
+trait_aquatic = {
+	cost = 1  # only for gestalt
+	host_has_dlc = "Aquatics Species Pack"
+	valid_for_all_ethics = no
+	allowed_ethics = { ethic_gestalt_consciousness }
+	sorting_priority = 20
+	
+	random_weight = {
+		AQUATIC = 100
+		MOL = 10
+		HUM = 2
+		MAM = 2
+		LITHOID = 0.5
+	}
+	
+	allowed_planet_classes = {
+		pc_ocean
+	}
+	
+	species_possible_remove = {
+		if = {
+			limit = {
+				exists = from
+			}
+			if = {
+				limit = { NOT = { from = { has_ascension_perk = ap_hydrocentric } } }
+				custom_tooltip = {
+					fail_text = trait_aquatic_remove_evolutionary_mastery
+					from = { has_ascension_perk = ap_evolutionary_mastery }
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = trait_aquatic_remove_hydrocentric
+					always = no
+				}
+			}
+		}
+	}
+	species_potential_add = {
+		exists = from
+		from = {
+			has_ascension_perk = ap_evolutionary_mastery
+		}
+	}
+	initial = yes
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			NOT = { has_trait = trait_pc_ocean_preference }
+		}
+	}
+	
+	custom_tooltip_with_modifiers = trait_aquatic_tooltip
+	triggered_pop_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				OR = {
+					is_planet_class = pc_ocean
+					has_modifier = flooded_habitat
+				}
+			}
+		}
+		pop_housing_usage_mult = -0.1
+		planet_jobs_food_produces_mult = 0.1
+		planet_jobs_minerals_produces_mult = 0.1
+		planet_jobs_energy_produces_mult = 0.1
+	}
+	triggered_pop_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				OR = {
+					is_planet_class = pc_ocean
+					has_modifier = flooded_habitat
+				}
+				exists = owner
+				owner = { has_ascension_perk = ap_hydrocentric }
+			}
+		}
+		pop_housing_usage_mult = -0.05
+		planet_jobs_food_produces_mult = 0.05
+		planet_jobs_minerals_produces_mult = 0.05
+		planet_jobs_energy_produces_mult = 0.05
+	}
+	triggered_pop_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				NOR = {
+					has_climate = wet
+					has_modifier = flooded_habitat
+				}
+				is_ideal = no
+			}
+		}
+		pop_housing_usage_mult = 0.3
+	}
+	triggered_pop_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				NOR = {
+					has_climate = wet
+					has_modifier = flooded_habitat
+				}
+				is_ideal = no
+				exists = owner
+				owner = { has_ascension_perk = ap_hydrocentric }
+			}
+		}
+		pop_housing_usage_mult = 0.15
+	}
+	# To make it be able to evaluate habitability of planet it has not settled yet. Only applies to this species
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			NOR = {
+				has_climate = wet
+				has_modifier = flooded_habitat
+			}
+			is_ideal = no
+		}
+		pop_environment_tolerance = -0.2
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			NOR = {
+				has_climate = wet
+				has_modifier = flooded_habitat
+			}
+			is_ideal = no
+			exists = owner
+			owner = { has_ascension_perk = ap_hydrocentric }
+		}
+		pop_environment_tolerance = -0.1
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			has_modifier = flooded_habitat
+		}
+		pop_environment_tolerance = 0.2
+	}
+	modifier = {
+		pc_ocean_habitability = 0.2
+	}
+	
+	icon = "gfx/interface/icons/traits/trait_aquatic.dds"
+}
+
 trait_machine_unit = {
 	cost = 0
 	sorting_priority = 20
@@ -155,9 +307,26 @@ trait_lithoid = {
 }
 
 trait_aquatic = {
-	cost = 3  #changes from 1 to 3
+	cost = 3
 	host_has_dlc = "Aquatics Species Pack"
-
+	valid_for_all_ethics = no
+	allowed_ethics = { ethic_fanatic_authoritarian
+		ethic_authoritarian
+		ethic_fanatic_egalitarian
+		ethic_egalitarian
+		ethic_fanatic_xenophobe
+		ethic_xenophobe
+		ethic_fanatic_xenophile
+		ethic_xenophile
+		ethic_fanatic_militarist
+		ethic_militarist
+		ethic_fanatic_pacifist
+		ethic_pacifist
+		ethic_fanatic_spiritualist
+		ethic_spiritualist
+		ethic_fanatic_materialist
+		ethic_materialist
+	}
 	sorting_priority = 20
 
 	random_weight = {

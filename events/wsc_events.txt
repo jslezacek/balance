@@ -7,10 +7,10 @@ country_event = {
 	
 	immediate = {
 		# add mega engineering tech research option to ring world origin
-		if = {
-			limit = { has_origin = origin_shattered_ring }
-			add_research_option = tech_mega_engineering
-		}
+		#if = {
+		#	limit = { has_origin = origin_shattered_ring }
+		#	add_research_option = tech_mega_engineering
+		#}
 		# add climate restoration tech research option to life seeded origin
 		if = {
 			limit = { has_origin = origin_life_seeded }

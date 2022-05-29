@@ -258,10 +258,10 @@ origin_shattered_ring = {
 	picture = GFX_origin_shattered_ring
 
 	starting_colony = pc_shattered_ring_habitable
-	habitability_preference = pc_shattered_ring_habitable
+	#habitability_preference = pc_shattered_ring_habitable # give bio normal habitability
 	initializers = { shattered_ring_start }
 	max_once_global = yes
-	non_colonizable_planet_class_neighbor = yes
+	non_colonizable_planet_class_neighbor = no # set to no
 
 	playable = {
 		host_has_dlc = Federations
